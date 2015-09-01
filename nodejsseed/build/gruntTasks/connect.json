@@ -1,0 +1,13 @@
+{
+  "server": {
+    "options": {
+      "port": "<%= cfg.server.connectPort %>",
+      "base": "<%= cfg.path.dist %>",
+      "hostname": "*",
+      "livereload": true,
+      "open": {
+        "target": "<%= cfg.server.connectHost %>"
+      }
+    }
+  }
+}

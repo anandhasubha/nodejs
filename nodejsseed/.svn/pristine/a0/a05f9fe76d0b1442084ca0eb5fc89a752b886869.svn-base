@@ -1,0 +1,13 @@
+{
+  "compile": {
+    "options": {
+      "baseUrl": "<%= cfg.path.distJS %>",
+      "mainConfigFile": "<%= cfg.path.distJS %>/<%= cfg.path.requireJSConfigfile %>.js",
+      "include": "<%= cfg.path.requireJSConfigfile %>",
+      "out": "<%= cfg.path.distJS %>/<%= pkg.name %>.js",
+      "findNestedDependencies": true,
+      "preserveLicenseComments": false,
+      "optimize": "none"
+    }
+  }
+}

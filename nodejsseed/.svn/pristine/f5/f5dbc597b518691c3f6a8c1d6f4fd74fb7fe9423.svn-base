@@ -1,0 +1,27 @@
+{
+  "options": {
+     "urls": [
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/Home",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/List",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/Add",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/Modify",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/Remove",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/register",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/login"
+    ],
+    "numberOfRuns": 5,
+    "openResults": false,
+    "resultsFolder": "<%= cfg.path.distPerfBenchMarkReports %>/webperf/",
+    "phantomasOptions": {},
+    "warnings": [
+      {
+        "variable": "jsErrors",
+        "limit": 0
+      },
+      {
+        "variable": "requests",
+        "limit": 10
+      }
+    ]
+  }
+}

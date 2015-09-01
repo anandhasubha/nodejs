@@ -1,0 +1,18 @@
+{
+  "dev": {
+    "script": "<%= cfg.path.src %>/app.js",
+    "options": {
+      "args": ["dev"],
+      "nodeArgs": ["--debug"],
+      "env": {
+        "PORT": "8181"
+      },
+      "cwd": "<%= cfg.path.root %>",
+      "ignore": ["<%= cfg.path.node_modules %>/**"],
+      "ext": "js",
+      "watch": ["server"],
+      "delay": "1000",
+      "legacyWatch": "true"
+    }
+  }
+}

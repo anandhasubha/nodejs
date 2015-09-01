@@ -1,0 +1,13 @@
+{
+  "staticCodeAnalyzer": [   
+    "jshint",
+    "jscs"
+  ],   
+  "qualityReports": [
+    "plato"
+  ],
+  "jsdocs": [
+    "ngdocs",
+    "yuidoc"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "defaultCacheBustVer": {
+    "options": {
+      "patterns": [
+        {
+          "match": "revision",
+          "replacement": "<%= grunt.template.today() %>"
+        }
+      ]
+    },
+    "files": [
+      {
+        "expand": true,
+        "cwd": "<%= cfg.path.distSrc %>",
+        "src": [
+          "index.html",
+          "js/<%= cfg.path.requireJSConfigfile %>.js"
+        ],
+        "dest": "<%= cfg.path.distSrc %>"
+      }
+    ]
+  },
+  "devCacheBustVer": {
+    "options": {
+      "patterns": [
+        {
+          "match": "revision",
+          "replacement": "<%= grunt.template.today() %>"
+        }
+      ]
+    },
+    "files": [
+      {
+        "expand": true,
+        "cwd": "<%= cfg.path.distSrc %>",
+        "src": [
+          "index.html",
+          "js/<%= pkg.name %>.min.js"
+        ],
+        "dest": "<%= cfg.path.distSrc %>"
+      }
+    ]
+  },
+  "releaseCacheBustVer": {
+    "options": {
+      "patterns": [
+        {
+          "match": "revision",
+          "replacement": "<%= pkg.version %>"
+        }
+      ]
+    },
+    "files": [
+      {
+        "expand": true,
+        "cwd": "<%= cfg.path.distSrc %>",
+        "src": [
+          "index.html",
+          "js/<%= pkg.name %>.min.js"
+        ],
+        "dest": "<%= cfg.path.distSrc %>"
+      }
+    ]
+  }
+}

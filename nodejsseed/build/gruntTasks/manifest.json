@@ -1,0 +1,27 @@
+{
+  "generate": {
+    "options": {
+      "basePath": "<%= cfg.path.distSrc %>/",
+      "cache": [
+        "js/<%= pkg.name %>.min.js",
+        "styles/<%= pkg.name %>.min.css"
+      ],
+      "network": [
+        "http://*",
+        "https://*"
+      ],
+      "fallback": [
+        "/ /offline.html"
+      ],
+      "preferOnline": true,
+      "verbose": true,
+      "timestamp": true,
+      "hash": true,
+      "master": [
+        "index.html"
+      ]
+    },
+    "src": [],
+    "dest": "<%= cfg.path.distSrc %>/manifest.appcache"
+  }
+}

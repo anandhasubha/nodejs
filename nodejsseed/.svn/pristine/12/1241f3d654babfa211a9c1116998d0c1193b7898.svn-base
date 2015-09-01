@@ -1,0 +1,21 @@
+[{
+	"item" : "list",
+	"label" : "List",
+	"url" : { "route" : "#/list" },
+	"role" : ["1", "2"]
+},{
+	"item" : "add",
+	"label" : "Add",
+	"url" : { "route" : "#/add" },
+	"role" : "1"
+},{
+	"item" : "modify",
+	"label" : "Modify",
+	"url" : { "route" : "#/modify" },
+	"role" : "1"
+},{
+	"item" : "remove",
+	"label" : "Remove",
+	"url" : { "route" : "#/remove" },
+	"role" : "1"
+}]

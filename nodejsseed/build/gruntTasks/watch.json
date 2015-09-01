@@ -1,0 +1,15 @@
+{
+  "options": {
+    "livereload": true,
+    "livereloadOnError": false
+  },
+  "src": {
+    "files": [
+      "<%= cfg.path.src %>/**/*",
+      "test/**/*"
+    ],
+    "tasks": [
+      "unit-test"
+    ]
+  }
+}

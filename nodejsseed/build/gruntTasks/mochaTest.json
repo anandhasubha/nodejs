@@ -1,0 +1,16 @@
+{
+    "unit": {
+      "options": {
+        "reporter": "XUnit",
+        "captureFile": "<%= cfg.path.distUnitReports %>/TEST-unit-results.xml"
+      },
+     "src": ["<%= cfg.path.distInstrumented%>/dist/test/unit/**/*.js"]
+    },
+    "e2e": {
+      "options": {
+        "reporter": "XUnit",
+        "captureFile": "<%= cfg.path.distE2EReports %>/TEST-e2e-results.xml"
+      },
+     "src": ["<%= cfg.path.distInstrumented%>/dist/test/e2e/**/*.js"]
+    }
+}

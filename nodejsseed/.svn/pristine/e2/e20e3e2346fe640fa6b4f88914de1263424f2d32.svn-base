@@ -1,0 +1,18 @@
+{
+  "options": {
+    "complexity": {
+      "logicalor": true,
+      "switchcase": true,
+      "forin": true,
+      "trycatch": true
+    },
+    "jshintrc": ".jshintrc"
+  },
+  "main": {
+    "files": {
+      "<%= cfg.path.distReports %>/complexity": [
+        "<%= cfg.path.src %>/**/*.js"
+      ]
+    }
+  }
+}

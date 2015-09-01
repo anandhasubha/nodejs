@@ -1,0 +1,25 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mocha Tests</title>
+  <link rel="stylesheet" href="../../vendor/styles/mocha/mocha.css" />
+</head>
+<body>
+  <div id="mocha"><p><a href=".">Index</a></p></div>
+  <!-- <div id="messages"></div>
+  <div id="fixtures"></div> -->
+  
+  <script src="../../vendor/js/jquery/jquery.min.js"></script>
+  <script src="../../vendor/js/mocha/mocha.js"></script>
+  <script src="../../vendor/js/chai/chai.js"></script>
+  <script>mocha.setup('bdd')</script>
+  
+  <script src="../../test/unit/test.chai.js"></script>
+
+  <script>
+    // mocha.checkLeaks();
+    // mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
+</html>

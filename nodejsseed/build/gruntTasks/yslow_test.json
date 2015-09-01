@@ -1,0 +1,28 @@
+{
+  "options": {
+    "info": "all",
+    "format": "tap",
+    "viewport": "1280x1024",
+    "urls": [
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/home",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/list",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/add",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/modify",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/remove",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/register",
+      "<%= cfg.server.perfBenchMarkHost %>/index.html#/login"
+    ],
+    "reports": [
+      "<%= cfg.path.distPerfBenchMarkReports %>/yslow/homePerf.tap",
+      "<%= cfg.path.distPerfBenchMarkReports %>/yslow/listPerf.tap",
+      "<%= cfg.path.distPerfBenchMarkReports %>/yslow/addPerf.tap",
+      "<%= cfg.path.distPerfBenchMarkReports %>/yslow/modifyPerf.tap",
+      "<%= cfg.path.distPerfBenchMarkReports %>/yslow/removePerf.tap",
+      "<%= cfg.path.distPerfBenchMarkReports %>/yslow/registerPerf.tap",
+      "<%= cfg.path.distPerfBenchMarkReports %>/yslow/loginPerf.tap"
+    ]
+  },
+  "your_target": {
+    "files": []
+  }
+}

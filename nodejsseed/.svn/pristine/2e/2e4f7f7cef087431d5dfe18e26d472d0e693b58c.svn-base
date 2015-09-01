@@ -1,0 +1,11 @@
+{
+  "compile": {
+    "name": "<%= pkg.name %>",
+    "description": "<%= pkg.description %>",
+    "version": "<%= pkg.version %>",
+    "options": {
+      "paths": "<%= cfg.path.src %>/",
+      "outdir": "<%= cfg.path.distReports %>/yuidocs/"
+    }
+  }
+}

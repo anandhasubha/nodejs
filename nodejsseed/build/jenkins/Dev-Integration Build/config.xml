@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description>This build job executes base build and updates the resulting deployable source files with new cache buster value using current datetime.Base build&#xd;
+ includes tasks like minification of css,js and html , concatenation of css and js , image optimization,removes unused css, generates html5 cache manifest file,autoprefixing vendor prefixes to CSS rule,usemin to replaces references with optimized scripts etc.</description>
+  <logRotator class="hudson.tasks.LogRotator">
+    <daysToKeep>30</daysToKeep>
+    <numToKeep>-1</numToKeep>
+    <artifactDaysToKeep>30</artifactDaysToKeep>
+    <artifactNumToKeep>-1</artifactNumToKeep>
+  </logRotator>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>NODE_PATH</name>
+          <description></description>
+          <defaultValue>C:\Program Files\nodejs</defaultValue>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>GRUNT_FILE_PATH</name>
+          <description></description>
+          <defaultValue>D:\shuaib\angularseed\angularseedv3.1</defaultValue>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+    <org.jenkinsci.plugins.flow__plugin.FlowProjectProperty plugin="flow@1.3"/>
+  </properties>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <customWorkspace>D:\shuaib\angularseed\angularseedv3.1</customWorkspace>
+  <builders>
+    <hudson.tasks.BatchFile>
+      <command>call D:\shuaib\angularseed\angularseedv3.1\build\jenkins\build dev-int</command>
+    </hudson.tasks.BatchFile>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

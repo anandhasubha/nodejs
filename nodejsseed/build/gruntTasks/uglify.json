@@ -1,0 +1,22 @@
+{
+  "options": {
+    "mangle": false,
+    "compress": {
+      "drop_console": true,
+      "global_defs": {
+        "DEBUG": false
+      },
+      "dead_code": true
+    },
+    "banner": "/*! <%= pkg.name %>_v<%= pkg.version %> - <%= grunt.template.today(\"mm-dd-yyyy\") %> */\n"
+  },
+  "files": {
+    "expand": true,
+    "cwd": "<%= cfg.path.distSrc %>",
+    "src": [
+      "**/*.js"
+    ],
+    "dest": "<%= cfg.path.distSrc %>",
+    "ext": ".min.js"
+  }
+}

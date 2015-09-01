@@ -1,0 +1,10 @@
+{
+  "options": {
+    "jshintrc": "<%= cfg.path.buildJshint %>/.jshintrc",
+    "reporter": "checkstyle",
+    "reporterOutput": "<%= cfg.path.distReports %>/jshint/jshint.xml"
+  },
+  "src": [
+    "<%= cfg.path.src %>/**/*.js"
+  ]
+}

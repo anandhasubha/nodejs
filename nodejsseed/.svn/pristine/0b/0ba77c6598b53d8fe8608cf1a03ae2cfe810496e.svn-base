@@ -1,0 +1,62 @@
+{
+  "vendor": {
+    "files": [
+      {
+        "expand": true,
+        "src": [
+          "<%= cfg.path.vendor %>/**/*"
+        ],
+        "dest": "<%= cfg.path.dist %>"
+      }
+    ]
+  },
+  "data": {
+    "files": [
+      {
+        "expand": true,
+        "src": [
+          "<%= cfg.path.data %>/**/*"
+        ],
+        "dest": "<%= cfg.path.dist %>"
+      }
+    ]
+  },
+  "cert": {
+    "files": [
+      {
+        "expand": true,
+        "src": [
+          "<%= cfg.path.cert %>/**/*"
+        ],
+        "dest": "<%= cfg.path.dist %>"
+      }
+    ]
+  },
+  "scripts": {
+    "files": [
+      {
+        "expand": true,
+        "src": [
+          "<%= cfg.path.src %>/**/*.js"
+        ],
+        "dest": "<%= cfg.path.dist %>"
+      }
+    ]
+  },
+  "coverage": {
+    "files": [
+      {
+        "expand": true,
+        "dot": true,
+        "cwd": "<%= cfg.path.root %>",
+        "dest": "<%= cfg.path.distInstrumented %>/dist",
+        "src": [    
+          "<%= cfg.path.test %>/**/*",
+          "<%= cfg.path.vendor %>/**/*",
+          "<%= cfg.path.data %>/**/*",
+          "<%= cfg.path.cert %>/**/*"
+        ]
+      }
+    ]
+  }
+}

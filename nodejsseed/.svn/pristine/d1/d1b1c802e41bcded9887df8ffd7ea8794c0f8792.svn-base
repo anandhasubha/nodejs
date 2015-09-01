@@ -1,0 +1,43 @@
+{
+  "build": {
+    "src": [
+      "<%= cfg.path.dist %>"
+    ]
+  },  
+  "scripts": {
+    "src": [
+      "<%= cfg.path.distSrc %>/**/*.js",
+      "!<%= cfg.path.distSrc %>/**/*.min.js"
+    ]
+  },  
+  "reports": {
+    "src": [
+      "<%= cfg.path.distReports %>/**/*"
+    ]
+  },
+  "e2etestreports": {
+    "src": [
+      "<%= cfg.path.distE2EReports %>"
+    ]
+  },
+  "e2ecoveragereports": {
+    "src": [
+      "<%= cfg.path.distE2ECoverageReports %>"
+    ]
+  },
+  "unittestreports": {
+    "src": [
+      "<%= cfg.path.distUnitReports %>"
+    ]
+  },
+  "unitcoveragereports": {
+    "src": [
+      "<%= cfg.path.distUnitCoverageReports %>"
+    ]
+  },
+  "instrumented": {
+    "src": [
+      "<%= cfg.path.distInstrumented %>"
+    ]
+  }
+}

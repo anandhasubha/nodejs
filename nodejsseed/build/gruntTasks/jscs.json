@@ -1,0 +1,9 @@
+{
+  "src": "<%= cfg.path.src %>/**/*.js",
+  "options": {
+    "force": true,
+    "config": "<%= cfg.path.buildJscs %>/.jscsrc",
+    "reporter": "checkstyle",
+    "reporterOutput": "<%= cfg.path.distReports %>/jscs/jscs.xml"
+  }
+}

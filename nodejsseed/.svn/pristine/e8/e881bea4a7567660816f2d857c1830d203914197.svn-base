@@ -1,0 +1,33 @@
+{
+  "path": {
+    "root":"./",
+    "src": "src",
+    "vendor": "vendor",
+    "data": "data",
+    "cert": "cert",
+    "dist": "dist",
+    "test": "test",
+    "node_modules": "node_modules",
+    "buildUnit": "build/unit",
+    "buildE2E": "build/e2e",
+    "buildJenkins": "build/jenkins",    
+    "buildJshint": "build/jshint",    
+    "buildJscs": "build/jscs",    
+    "distSrc": "dist/src",
+    "distVendor": "dist/vendor",
+    "distReports": "dist/reports",
+    "distE2EReports": "dist/reports/testing/e2e",
+    "distE2ECoverageReports": "dist/reports/testing/e2ecoverage",
+    "distUnitReports": "dist/reports/testing/unit",
+    "distUnitCoverageReports": "dist/reports/testing/unitcoverage",
+    "distInstrumented": "dist/instrumented"    
+  },
+  "server": {
+    "connectPort": 4001,
+    "connectHost": "http://localhost:4001/src/#/",
+    "jenkinsHost": "http://localhost:8080",
+    "perfBenchMarkHost": "http://localhost:8000/dist/src",
+    "proxyServer": "proxy.cognizant.com:6050",
+    "proxyServerAuth": "username:password"
+  }
+}

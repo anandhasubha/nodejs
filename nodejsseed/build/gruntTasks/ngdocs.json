@@ -1,0 +1,14 @@
+{
+  "all": [
+    "<%= cfg.path.src %>/**/*.js"
+  ],
+  "options": {
+    "dest": "<%= cfg.path.distReports %>/ngdocs/"
+  },
+  "api": {
+    "src": [
+      "<%= cfg.path.src %>/**/*.js"
+    ],
+    "title": "API Documentation"
+  }
+}

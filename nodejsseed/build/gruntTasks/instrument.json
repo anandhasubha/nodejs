@@ -1,0 +1,8 @@
+{
+  "options": {
+    "basePath": "<%= cfg.path.distInstrumented %>/dist"
+  },
+  "files": [
+    "<%= cfg.path.src %>/**/*.js"
+  ]
+}
